@@ -108,7 +108,7 @@ export default function Page1() {
             style={{ border: actionB }}
           >
             <h2 className="cardheading">Action</h2>
-            <img className="p1img" src="/public/images/p1.png" alt="" />
+            <img className="p1img" src="/images/p1.png" alt="" />
           </button>
 
           <button
@@ -118,7 +118,7 @@ export default function Page1() {
             style={{ border: draB }}
           >
             <h2 className="cardheading">Drama</h2>
-            <img className="p1img" src="/public/images/p2.png" alt="" />
+            <img className="p1img" src="/images/p2.png" alt="" />
           </button>
 
           <button
@@ -128,7 +128,7 @@ export default function Page1() {
             style={{ border: romB }}
           >
             <h2 className="cardheading">Romance</h2>
-            <img className="p1img" src="/public/images/p3.png" alt="" />
+            <img className="p1img" src="/images/p3.png" alt="" />
           </button>
 
           <button
@@ -138,7 +138,7 @@ export default function Page1() {
             style={{ border: thrB }}
           >
             <h2 className="cardheading">Thriller</h2>
-            <img className="p1img" src="/public/images/p4.png" alt="" />
+            <img className="p1img" src="/images/p4.png" alt="" />
           </button>
 
           <button
@@ -148,7 +148,7 @@ export default function Page1() {
             style={{ border: wesB }}
           >
             <h2 className="cardheading">Western</h2>
-            <img className="p1img" src="/public/images/p5.png" alt="" />
+            <img className="p1img" src="/images/p5.png" alt="" />
           </button>
 
           <button
@@ -158,7 +158,7 @@ export default function Page1() {
             style={{ border: horB }}
           >
             <h2 className="cardheading">Horror</h2>
-            <img className="p1img" src="/public/images/p6.png" alt="" />
+            <img className="p1img" src="/images/p6.png" alt="" />
           </button>
 
           <button
@@ -168,7 +168,7 @@ export default function Page1() {
             style={{ border: fanB }}
           >
             <h2 className="cardheading">Fantasy</h2>
-            <img className="p1img" src="/public/images/p7.png" alt="" />
+            <img className="p1img" src="/images/p7.png" alt="" />
           </button>
 
           <button
@@ -178,7 +178,7 @@ export default function Page1() {
             style={{ border: musB }}
           >
             <h2 className="cardheading">Music</h2>
-            <img className="p1img" src="/public/images/p8.png" alt="" />
+            <img className="p1img" src="/images/p8.png" alt="" />
           </button>
 
           <button
@@ -188,7 +188,7 @@ export default function Page1() {
             style={{ border: ficB }}
           >
             <h2 className="cardheading">Fiction</h2>
-            <img className="p1img" src="/public/images/p9.png" alt="" />
+            <img className="p1img" src="/images/p9.png" alt="" />
           </button>
           <button className="nextpage" onClick={nextpage}>
             Next Page

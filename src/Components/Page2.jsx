@@ -93,7 +93,7 @@ export default function page2() {
   const [part, setPart] = useState(360);
   const [isRunning, setIsRunning] = useState(false);
   const [intervalId, setIntervalId] = useState(null);
-  const audio1 = new Audio("/public/images/alarm1.mp3");
+  const audio1 = new Audio("/images/alarm1.mp3");
 
   if (hour >= 25 || hour < 0) setHour(0);
   if (minute >= 61 || minute < 0) setMinute(0);
@@ -188,7 +188,7 @@ export default function page2() {
         <div className={styles.data}>
           <img
             className={styles.profilepic}
-            src="/public/images/carton.png"
+            src="/images/carton.png"
             alt="Profile Picture"
           />
           <h1 className={styles.username}>{formData.UserName}</h1>

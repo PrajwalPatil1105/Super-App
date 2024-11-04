@@ -117,9 +117,6 @@ export default function Page3() {
   }
 
   useEffect(() => {
-    console.log(interest);
-    console.log(formdata);
-
     if (interest.includes("Action")) {
       Actioncall();
     }
@@ -157,7 +154,7 @@ export default function Page3() {
           <img
             title={formdata.UserName}
             className={styles.ProfilePic}
-            src="/public/images/profile2.png"
+            src="/images/profile2.png"
             alt=""
           />
         </button>

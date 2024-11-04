@@ -23,7 +23,7 @@ export default function Home() {
       <div className={styles.hleft}>
         <img
           className={styles.image1}
-          src="/public/images/HF.png"
+          src="/images/HF.png"
           alt="Image Not Found"
         />
         <h1 className={styles.statement}>Discover new things on Superapp</h1>
