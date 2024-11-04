@@ -157,7 +157,7 @@ export default function Page3() {
           <img
             title={formdata.UserName}
             className={styles.ProfilePic}
-            src="/src/images/profile2.png"
+            src="/public/images/profile2.png"
             alt=""
           />
         </button>
