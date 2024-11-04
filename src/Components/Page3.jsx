@@ -21,9 +21,7 @@ export default function Page3() {
 
   async function Actioncall() {
     let Actiondata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${
-        import.meta.env.VITE_MOVIEAPI
-      }&with_genres=28`
+      `https://api.themoviedb.org/3/discover/movie?api_key=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYTNiMGU0ZjlkNDhmOGM5ZTcxZjJlMWM3MWM3YjY5OSIsIm5iZiI6MTczMDcwNTgwOC40MDM2NDk4LCJzdWIiOiI2NzI0N2Y0NGE0OTljYzJlZjcwNGY4Y2QiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.w3fPUtCjIPX0o6C4hKs4WrTCQEXVA31vhvZjzZt4NDU&with_genres=28`
     );
     let ActionMainData = await Actiondata.json();
     setAction(ActionMainData);
