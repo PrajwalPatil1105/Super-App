@@ -32,9 +32,10 @@ export default function Page3() {
   // -----------------------------
   async function Horrorcall() {
     let Horrordata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=27`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=27`
     );
-
     let HorrorMainData = await Horrordata.json();
     setHorror(HorrorMainData);
   }
@@ -42,16 +43,19 @@ export default function Page3() {
   // ------------------------
   async function Fictioncall() {
     let Fictiondata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=878`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=878`
     );
-
     let FictionMainData = await Fictiondata.json();
     setFiction(FictionMainData);
   }
   // --------------------------
   async function Musiccall() {
     let Musicdata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=10402`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=10402`
     );
     let MusicMainData = await Musicdata.json();
     setMusic(MusicMainData);
@@ -60,7 +64,9 @@ export default function Page3() {
 
   async function Thrillercall() {
     let Thrillerdata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=53`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=53`
     );
     let ThrillerMainData = await Thrillerdata.json();
     setThriller(ThrillerMainData);
@@ -69,7 +75,9 @@ export default function Page3() {
   // ------------------------
   async function Dramacall() {
     let Dramadata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=10752`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=10752`
     );
     let DramaMainData = await Dramadata.json();
     setDrama(DramaMainData);
@@ -78,7 +86,9 @@ export default function Page3() {
   // ------------------------
   async function Fantasycall() {
     let Fantasydata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=14`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=14`
     );
     let FantasyMainData = await Fantasydata.json();
     setFantasy(FantasyMainData);
@@ -88,7 +98,9 @@ export default function Page3() {
 
   async function Westerncall() {
     let Westerndata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=37`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=37`
     );
     let WesternMainData = await Westerndata.json();
     setWestern(WesternMainData);
@@ -96,7 +108,9 @@ export default function Page3() {
   // ------------------------
   async function Romancecall() {
     let Romancedata = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=a3b0e4f9d48f8c9e71f2e1c71c7b699&with_genres=80`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        import.meta.env.VITE_MOVIEAPI
+      }&with_genres=80`
     );
     let RomanceMainData = await Romancedata.json();
     setRomance(RomanceMainData);
