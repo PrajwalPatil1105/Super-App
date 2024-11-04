@@ -117,7 +117,6 @@ export default function Page3() {
   }
 
   useEffect(() => {
-    console.log("API Key:", import.meta.env.VITE_MOVIEAPI);
     if (interest.includes("Action")) {
       Actioncall();
     }

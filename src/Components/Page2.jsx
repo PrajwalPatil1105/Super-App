@@ -62,7 +62,9 @@ export default function page2() {
   async function weather() {
     try {
       let weatherData = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ec2de9d2036518d2994175c0314c81bc`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${
+          import.meta.env.VITE_WEATHERAPI
+        }`
       );
 
       let CurrentData = await weatherData.json();
