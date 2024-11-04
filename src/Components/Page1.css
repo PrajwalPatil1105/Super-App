@@ -1,0 +1,258 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.p1main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.lside {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  color: white;
+  margin-left: 30px;
+  margin-top: 40px;
+  font-family: DM Sans;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.p1heading {
+  width: 196px;
+  height: 70px;
+  margin-top: 70px;
+  margin-left: 90px;
+  color: rgb(114, 219, 115, 1);
+  font-family: "Single Day", serif;
+  font-size: 53px;
+  font-weight: 500;
+}
+
+.p1l1 {
+  width: 400px;
+  height: 230px;
+  margin-left: 90px;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 550;
+  line-height: 63px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.rside {
+  background-color: black;
+  display: flex;
+}
+
+.cards {
+  width: 500px;
+  height: 450px;
+  margin-top: 70px;
+  margin-left: 120px;
+  display: grid;
+  grid-template-rows: 170px 170px 170px;
+  grid-template-columns: 190px 190px 190px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9 {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card1 {
+  background-color: rgba(255, 82, 9, 1);
+}
+.card2 {
+  background-color: rgba(215, 164, 255, 1);
+}
+.card3 {
+  background-color: rgba(17, 184, 0, 1);
+}
+.card4 {
+  background-color: rgba(132, 194, 255, 1);
+}
+.card5 {
+  background-color: rgba(144, 37, 0, 1);
+}
+.card6 {
+  background-color: rgba(115, 88, 255, 1);
+}
+.card7 {
+  background-color: rgba(255, 74, 222, 1);
+}
+.card8 {
+  background-color: rgba(230, 30, 50, 1);
+}
+.card9 {
+  background-color: rgba(108, 208, 97, 1);
+}
+
+.card1:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card2:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card3:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card4:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card5:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card6:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card7:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card8:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.card9:hover .p1img {
+  width: 150px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.cardheading {
+  color: rgba(255, 255, 255, 1);
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.p1img {
+  margin-top: 10px;
+  width: 140px;
+  height: 90px;
+  border-radius: 15px;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.55));
+  transition-duration: 0.2s;
+}
+
+.choicebtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 80px;
+}
+
+.choice {
+  color: white;
+  width: 122px;
+  height: 38px;
+  border-radius: 20px;
+  background-color: rgba(20, 138, 8, 1);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.57px;
+  letter-spacing: 0.02em;
+  margin-left: 18px;
+  margin-top: 10px;
+  padding-left: 15px;
+  justify-content: center;
+  align-content: center;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0p);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.choicermv {
+  float: right;
+  width: 23px;
+  margin-right: 7px;
+  margin-top: 5px;
+  background-color: rgba(20, 138, 8, 1);
+  border: none;
+  cursor: pointer;
+}
+.choicermv:hover {
+  color: white;
+}
+
+.nextpage {
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(20, 138, 8, 1);
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 440px;
+  margin-top: 40px;
+  transition-duration: 0.2s;
+}
+
+.nextpage:hover {
+  color: rgba(20, 138, 8, 1);
+  background-color: white;
+}
+
+.warring {
+  color: red;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 90px;
+  margin-top: 35px;
+}

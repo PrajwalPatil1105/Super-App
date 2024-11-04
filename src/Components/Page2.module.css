@@ -1,0 +1,663 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.leftmain {
+  margin-top: 30px;
+  margin-left: 130px;
+  height: 620px;
+  display: grid;
+  grid-template-columns: 425px 325px;
+  grid-template-rows: 200px 155px 220px;
+  grid-row-gap: 10px;
+  grid-column-gap: 25px;
+}
+
+/* -------------------------------------------- User info ------------------------------------- */
+.data {
+  background-color: rgba(87, 70, 234, 1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilepic {
+  height: 190px;
+  width: 85px;
+  margin-left: 15px;
+  margin-top: 8px;
+  position: absolute;
+  transition-duration: 0.1s;
+}
+
+.profilepic:hover {
+  height: 197px;
+  width: 90px;
+  margin-top: 3.5px;
+  margin-left: 12px;
+}
+
+.username {
+  color: white;
+  margin-top: 22px;
+  line-height: 10px;
+  margin-left: 130px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.name {
+  color: white;
+  margin-left: 130px;
+  margin-top: 17px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.gmail {
+  margin-top: 3px;
+  color: white;
+  margin-left: 130px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.choiceitems {
+  margin-top: 28px;
+  line-height: 10px;
+  margin-left: 120px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.choice {
+  color: white;
+  background-color: rgba(159, 148, 255, 1);
+  margin-left: 8px;
+  width: 75px;
+  height: 25px;
+  border-radius: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  align-content: center;
+}
+
+/* --------------------------------------------------- Weather ----------------------------------------- */
+
+.weather {
+  background-color: rgba(16, 23, 68, 1);
+  border-radius: 12px;
+}
+
+.date {
+  height: 42px;
+  width: 425px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: rgba(255, 74, 222, 1);
+}
+
+.currentDate {
+  color: white;
+  margin-left: 70px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 46.76px;
+  letter-spacing: 0.01em;
+}
+
+.currentTimer {
+  color: white;
+  margin-left: 60px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 46.76px;
+  letter-spacing: 0.01em;
+}
+
+.liveWeather {
+  background-color: rebeccapurple;
+  height: 114px;
+  width: 425px;
+  border-radius: 0px 0px 12px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.cloud {
+  margin-top: 17px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cloudIcon {
+  position: absolute;
+  font-size: 22px;
+  margin-top: 17px;
+  margin-left: 35px;
+}
+
+.cloudData {
+  color: white;
+  position: absolute;
+  width: 80px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 15px;
+  margin-left: 28px;
+  margin-top: 90px;
+}
+
+.line {
+  position: absolute;
+  color: white;
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 200;
+  margin-left: 125px;
+  margin-top: 15px;
+  opacity: 0.5;
+}
+
+.deg {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 17px;
+  color: white;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.pressure {
+  height: 50px;
+  width: 115px;
+  position: absolutes;
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+  align-items: center;
+}
+.pressureIcon {
+  position: absolute;
+  margin-left: 23px;
+  font-size: 14px;
+}
+
+.pressureData {
+  position: absolute;
+  margin-left: 46px;
+  width: 80px;
+  color: white;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.line2 {
+  position: absolute;
+  color: white;
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 200;
+  margin-left: 275px;
+  margin-top: 15px;
+  opacity: 0.5;
+}
+
+.wind {
+  position: absolutes;
+  margin-top: 19px;
+  height: 40px;
+  width: 115px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.windIcon {
+  position: absolute;
+  margin-left: 23px;
+  font-size: 14px;
+}
+
+.windData {
+  position: absolute;
+  margin-left: 55px;
+  width: 70px;
+  color: white;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.humidity {
+  position: absolutes;
+  margin-top: 2px;
+  height: 40px;
+  width: 115px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.humidityIcon {
+  position: absolute;
+  margin-left: 23px;
+  font-size: 14px;
+}
+
+.humidityData {
+  position: absolute;
+  margin-left: 55px;
+  width: 50px;
+  color: white;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.errorIcon {
+  margin-top: 34px;
+  margin-left: 20px;
+}
+.error {
+  margin-left: 14px;
+  margin-top: 20px;
+  width: 320px;
+  height: 50px;
+  color: white;
+  text-align: justify;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------ Notes ---------------------------------------------- */
+.note {
+  background-color: rgba(241, 199, 91, 1);
+  border-radius: 12px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.noteheading {
+  color: black;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.noteinput {
+  width: 290px;
+  height: 290px;
+  margin-left: 16px;
+  margin-top: 14px;
+  background-color: rgba(241, 199, 91, 1);
+  color: black;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  overflow-y: scroll;
+  resize: none;
+}
+
+.noteinput::placeholder {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* ---------------------------------------------- Timer ----------------------- */
+
+.Timer {
+  background-color: rgba(30, 35, 67, 1);
+  border-radius: 12px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 270px 505px;
+}
+
+.WatchDisplay {
+  border-radius: 12px 0px 0px 12px;
+  align-content: center;
+}
+
+.WatchCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 30px;
+  background-color: rgba(25, 30, 57, 1);
+}
+
+.ellipes {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 12px rgb(64, 40, 106);
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.ellipesData {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-color: rgba(25, 30, 57, 1);
+  margin-left: 7.5px;
+  margin-top: 7.8px;
+  box-shadow: 0px 0px 10px rgba(25, 30, 57, 1);
+  display: flex;
+  flex-direction: row;
+}
+
+.hour {
+  color: white;
+  margin-left: 15px;
+  margin-top: 60px;
+  font-family: Roboto;
+  font-size: 25px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+.minute {
+  color: white;
+  margin-left: 18px;
+  margin-top: 60px;
+  font-family: Roboto;
+  font-size: 25px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+.seconds {
+  color: white;
+  margin-left: 18px;
+  margin-top: 60px;
+  font-family: Roboto;
+  font-size: 25px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  scrollbar-width: none;
+}
+
+.dot1 {
+  position: absolute;
+  color: white;
+  margin-left: 55px;
+  margin-top: 65px;
+  font-size: 28px;
+}
+.dot2 {
+  position: absolute;
+  color: white;
+  margin-left: 103px;
+  margin-top: 65px;
+  font-size: 28px;
+}
+
+.WatchControl {
+  border-radius: 0px 12px 12px 0px;
+  display: grid;
+  grid-template-rows: 20px 25px 60px 20px;
+  padding-top: 15px;
+}
+
+.title {
+  color: rgba(148, 148, 148, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 60px;
+  word-spacing: 85px;
+}
+
+.Button {
+  word-spacing: 118px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.UpDown {
+  background-color: transparent;
+  margin-top: 2px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  width: 27px;
+  color: rgba(148, 148, 148, 1);
+  cursor: pointer;
+}
+
+.UpDown:hover {
+  color: white;
+}
+
+.timeinput {
+  word-spacing: 14px;
+  margin-left: 32px;
+}
+
+.setTime {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.dots2 {
+  color: white;
+  font-size: 50px;
+}
+
+.start {
+  width: 300px;
+  height: 42px;
+  margin-left: 13px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 106, 106, 1);
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 430;
+  letter-spacing: 1px;
+  text-align: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: white;
+  color: rgba(255, 106, 106, 1);
+}
+
+/* ------------------------------------------------------------------------ */
+
+.rightmain {
+  height: 100vh;
+}
+
+.News {
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 300px 100px 193px;
+  grid-template-columns: 400px;
+  padding: 30px 0px 0px 70px;
+}
+
+.NewsImg {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.Image {
+  width: 400px;
+  border-radius: 12px 12px 0px 0px;
+  height: 410px;
+}
+
+.NewsTitle {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.Title {
+  width: 330px;
+  height: 70px;
+  color: white;
+  font-family: Roboto;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-left: 40px;
+  font-weight: 400;
+  line-height: 22px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.NewsDesc {
+  background-color: rgb(226, 219, 219);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.Description {
+  height: 130px;
+  width: 330px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.ErrorDesc {
+  background-color: #fff;
+  border-radius: 0px 0px 12px 12px;
+  padding-top: 60px;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #626060;
+  border-radius: 10px;
+}
+
+.Browse {
+  position: absolute;
+  background-color: rgba(20, 138, 8, 1);
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 1275px;
+  margin-top: 640px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.Browse:hover {
+  color: rgba(20, 138, 8, 1);
+  background-color: white;
+}
+
+@media (max-width: 1280px) {
+  .main {
+    grid-template-columns: 70% 30%;
+  }
+  .leftmain {
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+  .News {
+    padding: 60px 0px 0px 0px;
+    grid-template-columns: 350px;
+  }
+  .Image {
+    width: 350px;
+  }
+  .Title {
+    width: 290px;
+  }
+  .Description {
+    width: 290px;
+  }
+
+  .Browse {
+    width: 120px;
+    height: 40px;
+    margin-left: 1125px;
+    margin-top: 670px;
+  }
+}
